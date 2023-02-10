@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# dislay time in hours...
+
+hours=0
+minutes=0
+
+while [ $hours -lt 13 ]
+do
+  while [ $minutes -lt 60 ]
+  do
+    printf "%02d:%02d\n" $hours $minutes
+    minutes=$((minutes + 1))
+  done
+  hours=$((hours + 1))
+  minutes=0
+done | head -70
