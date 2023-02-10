@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script displays the content of the cueernt directory in list format
+# display the content of the current directory
 
 for files=(*)
 
